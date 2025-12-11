@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MonColibri - Témoignages</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#36e27b",
+                        "background-light": "#f6f8f7",
+                        "background-dark": "#112117",
+                        "card-dark": "#1a2a20",
+                        "text-secondary": "#95c6a9"
+                    },
+                    fontFamily: {
+                        "display": ["Spline Sans", "sans-serif"],
+                        "body": ["Noto Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "2xl": "2rem", "full": "9999px"},
+                    backgroundImage: {
+                        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #112117;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #254632;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #36e27b;
+        }
+
+        /* Glassmorphism utility */
+        .glass-card {
+            background: rgba(26, 42, 32, 0.6);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(54, 226, 123, 0.1);
+        }
+
+        .glass-card:hover {
+            border-color: rgba(54, 226, 123, 0.3);
+            background: rgba(26, 42, 32, 0.8);
+            box-shadow: 0 10px 40px -10px rgba(54, 226, 123, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white font-display overflow-x-hidden antialiased">
+<!-- Decorative Background Glow -->
+<div class="fixed top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-primary/5 rounded-full blur-[120px] pointer-events-none z-0"></div>
+<div class="relative flex min-h-screen flex-col z-10">
+<div id="header-placeholder"></div>
+<!-- Main Content -->
+<main class="flex-1 flex flex-col items-center justify-center py-16 px-4 md:px-8">
+<div class="max-w-6xl w-full flex flex-col gap-16">
+<!-- Section Header -->
+<div class="flex flex-col items-center text-center space-y-4 max-w-3xl mx-auto">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold uppercase tracking-wider">
+<span class="material-symbols-outlined text-sm">verified_user</span>
+                        Confiance &amp; Sécurité
+                    </div>
+<h1 class="text-white text-4xl md:text-5xl font-bold leading-tight tracking-tight">
+                        Ils nous font <span class="text-primary relative inline-block">
+                            confiance
+                            <svg class="absolute w-full h-3 -bottom-1 left-0 text-primary/30" preserveaspectratio="none" viewbox="0 0 100 20">
+<path d="M0 10 Q 50 20 100 10" fill="none" stroke="currentColor" stroke-width="3"></path>
+</svg>
+</span>
+</h1>
+<p class="text-text-secondary text-lg md:text-xl font-light leading-relaxed max-w-2xl">
+                        Découvrez les histoires de ceux qui ont trouvé une oreille attentive. Votre anonymat et votre sécurité sont notre priorité absolue.
+                    </p>
+</div>
+<!-- Testimonials Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+<!-- Card 1 -->
+<div class="glass-card rounded-2xl p-8 flex flex-col gap-6 relative group transition-all duration-500 hover:-translate-y-2">
+<div class="absolute -top-4 -right-4 bg-primary/20 text-primary p-3 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<span class="material-symbols-outlined text-[32px]">format_quote</span>
+</div>
+<div class="flex items-center gap-4">
+<div class="relative">
+<div class="w-14 h-14 rounded-full bg-cover bg-center border-2 border-primary shadow-[0_0_15px_rgba(54,226,123,0.3)]" data-alt="Portrait of a young smiling African woman looking sideways" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBQmDn9gao3bqFNsoL4E1KserA66yQRwhkCUj3xF1m7D7MfmF0ONoRVCGp56iBgyTvClTEuSIF9TiigqbZD5fgMfF6dsAol-_-nScDylJsJnfOK9YMLpODYt0RmuGK7J0JFQNcgqt-xxSNwAY1bldIS8ByxFhSMM8IUAOg1ZQb9figB-ijZ0HnOHIiazMcYo2QEwu94Zg3kus8z6OoktPHZZdbwJA240OtemeDb-wd1B8MdAfU6yhAwMUKl334uTFFFltx6k23aSJ33');"></div>
+<div class="absolute bottom-0 right-0 size-4 bg-primary rounded-full border-2 border-[#1a2a20]"></div>
+</div>
+<div>
+<h3 class="text-white text-lg font-bold">Sarah, Sénégal</h3>
+<p class="text-text-secondary text-sm">Étudiante, 21 ans</p>
+</div>
+</div>
+<div class="flex gap-1 text-primary">
+<span class="material-symbols-outlined fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-gray-300 text-base leading-relaxed font-light">
+                            "MonColibri a été une bouée de sauvetage. L'écoute bienveillante et <span class="text-white font-medium bg-primary/10 px-1 rounded">l'anonymat total</span> m'ont permis de m'ouvrir sans peur du jugement."
+                        </p>
+</div>
+<!-- Card 2 (Featured/Central) -->
+<div class="glass-card rounded-2xl p-8 flex flex-col gap-6 relative group transition-all duration-500 hover:-translate-y-2 md:-mt-4 bg-white/[0.07] border-primary/30 shadow-[0_0_30px_-5px_rgba(54,226,123,0.1)]">
+<div class="absolute -top-4 -right-4 bg-primary/20 text-primary p-3 rounded-full opacity-100 transition-opacity duration-300">
+<span class="material-symbols-outlined text-[32px]">format_quote</span>
+</div>
+<div class="flex items-center gap-4">
+<div class="relative">
+<div class="w-14 h-14 rounded-full bg-cover bg-center border-2 border-primary shadow-[0_0_15px_rgba(54,226,123,0.3)]" data-alt="Portrait of a young African man smiling confidently" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCRjYPNq0_zMENivi6ODhHxKU5ntAX_FmBysgXFM9oh5uUKaoZ-6Wbb73N5kPc3JD53CYO93ZSYpiTk_cZkaa7YEIKgriEZZS_aMHYCNYVZ6bap5KE4LJGqsTHFR4PvYaUIkbTv2hnbffkIr0iMSHsSCXbNogbt_9ILAKQ-oNrt5dRRpA5PiYtPwfcLYJQUW2cFM4DJit8zOEhnz97ZDxHxHhifTgy2ZM8UF43rsBmkWEQZ6Zf5_MaSE1sc96fitjSTlxDa11E6UpMo');"></div>
+<div class="absolute bottom-0 right-0 size-4 bg-primary rounded-full border-2 border-[#1a2a20]"></div>
+</div>
+<div>
+<h3 class="text-white text-lg font-bold">Amadou, Mali</h3>
+<p class="text-text-secondary text-sm">Entrepreneur, 24 ans</p>
+</div>
+</div>
+<div class="flex gap-1 text-primary">
+<span class="material-symbols-outlined fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-gray-200 text-base leading-relaxed font-light">
+                            "Une plateforme incroyable pour la jeunesse. J'ai trouvé des conseils pertinents et un <span class="text-white font-medium bg-primary/10 px-1 rounded">soutien psychologique réel</span> à n'importe quelle heure."
+                        </p>
+</div>
+<!-- Card 3 -->
+<div class="glass-card rounded-2xl p-8 flex flex-col gap-6 relative group transition-all duration-500 hover:-translate-y-2">
+<div class="absolute -top-4 -right-4 bg-primary/20 text-primary p-3 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<span class="material-symbols-outlined text-[32px]">format_quote</span>
+</div>
+<div class="flex items-center gap-4">
+<div class="relative">
+<div class="w-14 h-14 rounded-full bg-cover bg-center border-2 border-primary shadow-[0_0_15px_rgba(54,226,123,0.3)]" data-alt="Portrait of a young smiling woman with braided hair" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDeZSHyFj097YkOErXGqps7SNaEBHAa6VKs_b51ElNNvvLSzPw0LbLHiOXXyAVRZmqh8j-XeN6ji64JcjMTrfsH0ZmLzweyvmhs9BrieIOY1Hf0q4Q8p7UwN2zqag8mxcQSRSVd-rfmF-Gihkiet_x84p7YMB5XfM8RU0t1hOsslS9TWCQINGb0RSMDPQYEq-LFsVyC9Yv6pjnCBBxZ6XosKlaV8NwH16jYia4vAG8-MN9elNEE1qmUktggLeEsZXsJoWXT24DB9ykX');"></div>
+<div class="absolute bottom-0 right-0 size-4 bg-primary rounded-full border-2 border-[#1a2a20]"></div>
+</div>
+<div>
+<h3 class="text-white text-lg font-bold">Nia, Kenya</h3>
+<p class="text-text-secondary text-sm">Artiste, 20 ans</p>
+</div>
+</div>
+<div class="flex gap-1 text-primary">
+<span class="material-symbols-outlined fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-gray-300 text-base leading-relaxed font-light">
+                            "Je me sens enfin comprise et moins seule. L'interface est apaisante et les échanges sont <span class="text-white font-medium bg-primary/10 px-1 rounded">très humains</span>, même avec l'IA."
+                        </p>
+</div>
+</div>
+<!-- Navigation Controls (Visual only) -->
+<div class="flex justify-center gap-3">
+<button class="size-2.5 rounded-full bg-primary/20 hover:bg-primary transition-colors cursor-pointer"></button>
+<button class="size-2.5 rounded-full bg-primary shadow-[0_0_10px_rgba(54,226,123,0.5)] cursor-pointer"></button>
+<button class="size-2.5 rounded-full bg-primary/20 hover:bg-primary transition-colors cursor-pointer"></button>
+</div>
+<!-- Trust Stats Strip -->
+<div class="w-full mt-8">
+<div class="glass-card rounded-2xl p-6 md:p-10 border border-primary/20">
+<div class="flex flex-wrap justify-around items-center gap-8 md:gap-12">
+<div class="flex items-center gap-4 group">
+<div class="size-12 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined">forum</span>
+</div>
+<div class="flex flex-col">
+<span class="text-2xl md:text-3xl font-bold text-white tracking-tight">10,000+</span>
+<span class="text-text-secondary text-sm font-medium">Discussions sécurisées</span>
+</div>
+</div>
+<div class="hidden md:block w-px h-12 bg-white/10"></div>
+<div class="flex items-center gap-4 group">
+<div class="size-12 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined">lock</span>
+</div>
+<div class="flex flex-col">
+<span class="text-2xl md:text-3xl font-bold text-white tracking-tight">100%</span>
+<span class="text-text-secondary text-sm font-medium">Anonymat garanti</span>
+</div>
+</div>
+<div class="hidden md:block w-px h-12 bg-white/10"></div>
+<div class="flex items-center gap-4 group">
+<div class="size-12 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined">public</span>
+</div>
+<div class="flex flex-col">
+<span class="text-2xl md:text-3xl font-bold text-white tracking-tight">14</span>
+<span class="text-text-secondary text-sm font-medium">Pays couverts</span>
+</div>
+</div>
+</div>
+</div>
+<div class="flex justify-center mt-6 opacity-60">
+<p class="text-xs text-text-secondary text-center">
+                            * Les identités visuelles ont été modifiées pour protéger la vie privée de nos utilisateurs.
+                        </p>
+</div>
+</div>
+</div>
+</main>
+<div id="footer-placeholder"></div>
+</div>
+<script src="js/main.js"></script>
+</body></html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MonColibri - Mission</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#36e27b",
+                        "primary-dark": "#2ab562",
+                        "background-light": "#f6f8f7",
+                        "background-dark": "#112117",
+                        "surface-dark": "#1a2c22",
+                        "surface-light": "#ffffff",
+                    },
+                    fontFamily: {
+                        "display": ["Spline Sans", "sans-serif"],
+                        "body": ["Noto Sans", "sans-serif"],
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem",
+                        "lg": "1.5rem",
+                        "xl": "2rem",
+                        "2xl": "3rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .text-gradient {
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image: linear-gradient(to right, #36e27b, #84fab0);
+        }
+        .glass-card {
+            background: rgba(26, 44, 34, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(54, 226, 123, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-white antialiased selection:bg-primary selection:text-background-dark">
+<div id="header-placeholder"></div>
+<main class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<!-- Decoration Background Blur -->
+<div class="fixed top-[-20%] left-[-10%] w-[50%] h-[50%] bg-primary/5 rounded-full blur-[120px] pointer-events-none z-0"></div>
+<div class="fixed bottom-[-10%] right-[-5%] w-[40%] h-[40%] bg-primary/5 rounded-full blur-[100px] pointer-events-none z-0"></div>
+<div class="layout-container flex h-full grow flex-col z-10">
+<!-- Section Header / Intro -->
+<div class="w-full flex justify-center pt-12 pb-6 px-4">
+<div class="flex flex-col items-center gap-4 text-center max-w-3xl">
+<span class="px-4 py-1.5 rounded-full border border-primary/30 bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider">
+                        Notre Mission
+                    </span>
+<h2 class="text-3xl md:text-5xl font-bold tracking-tight">
+                        Éclairer le chemin pour <span class="text-gradient">la jeunesse africaine</span>
+</h2>
+<p class="text-slate-600 dark:text-slate-300 text-lg max-w-2xl font-light leading-relaxed">
+                        MonColibri agit comme un phare d'espoir, offrant un compagnon IA qui écoute sans jugement pour autonomiser la prochaine génération.
+                    </p>
+</div>
+</div>
+<!-- Hero Split Section -->
+<div class="px-4 md:px-10 lg:px-20 xl:px-40 py-10">
+<div class="layout-content-container flex flex-col max-w-[1200px] mx-auto">
+<div class="@container">
+<div class="flex flex-col-reverse lg:flex-row gap-10 items-center">
+<!-- Text Content -->
+<div class="flex flex-col gap-8 flex-1">
+<div class="flex flex-col gap-6">
+<div class="flex gap-4 items-start">
+<div class="mt-1 flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary text-background-dark">
+<span class="material-symbols-outlined text-xl">light_mode</span>
+</div>
+<div>
+<h3 class="text-xl font-bold mb-2">Une lueur dans l'obscurité</h3>
+<p class="text-slate-400 leading-relaxed">
+                                                Dans un monde où le silence pèse souvent trop lourd, nous apportons une écoute active et bienveillante. Notre technologie n'est pas là pour remplacer l'humain, mais pour briser l'isolement au moment où cela compte le plus.
+                                            </p>
+</div>
+</div>
+<div class="flex gap-4 items-start">
+<div class="mt-1 flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-surface-dark border border-primary/20 text-primary">
+<span class="material-symbols-outlined text-xl">forest</span>
+</div>
+<div>
+<h3 class="text-xl font-bold mb-2">Ancré dans nos réalités</h3>
+<p class="text-slate-400 leading-relaxed">
+                                                Conçu pour comprendre les nuances culturelles et les défis spécifiques de la jeunesse africaine. Une approche respectueuse, moderne et profondément humaine.
+                                            </p>
+</div>
+</div>
+</div>
+<div class="pt-4">
+<button class="group flex items-center justify-center gap-2 rounded-full h-12 px-8 bg-primary hover:bg-primary-dark transition-all duration-300 text-background-dark text-base font-bold shadow-[0_0_20px_rgba(54,226,123,0.3)] hover:shadow-[0_0_30px_rgba(54,226,123,0.5)]">
+<span>Rejoindre le mouvement</span>
+<span class="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Visual Hero -->
+<div class="w-full lg:w-[50%] relative group">
+<div class="absolute -inset-1 bg-gradient-to-r from-primary to-teal-600 rounded-2xl blur opacity-20 group-hover:opacity-40 transition duration-1000"></div>
+<div class="relative w-full aspect-[4/3] bg-surface-dark rounded-2xl overflow-hidden shadow-2xl border border-white/5">
+<!-- Using placeholder but describing the intended visual -->
+<img alt="Young person looking towards a warm hopeful light in a dark setting, symbolizing hope and future" class="w-full h-full object-cover opacity-80 mix-blend-overlay group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTVbTeFbrX5vcbaVqEAH_f9Zi1AzRFvLJuaf1iNRf-1w1qg6kinKWGtR0_ReciMt8leLL6_jyPxtomxEaXF5eulcDrBF2kEz8h2oEh1R6a5dHz8P1Lsp8semvUBz8G8DE8TirClLHzfDhBcnooIf0rMwsadFFBGu8i79i-_SGKNv_OahUa4D8U_DIQcqxnfelKjjZgn8-FU_OChB1aajzC2ozlGySBTGsTnpwdCRB7LUm3abuoJbjLJaT3pVg0kSJ1qk40030CuKIL"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-transparent opacity-90"></div>
+<!-- Floating UI Element decoration -->
+<div class="absolute bottom-6 left-6 right-6 p-4 glass-card rounded-xl flex items-center gap-4 animate-pulse">
+<div class="h-10 w-10 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">graphic_eq</span>
+</div>
+<div>
+<p class="text-xs text-primary font-bold uppercase tracking-wide">Status IA</p>
+<p class="text-white text-sm font-medium">À l'écoute, disponible maintenant.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Features / Impact Cards -->
+<div class="px-4 md:px-10 lg:px-20 xl:px-40 py-10">
+<div class="max-w-[1200px] mx-auto flex flex-col gap-10">
+<div class="flex flex-col gap-2">
+<h2 class="text-2xl md:text-3xl font-bold text-white">Notre Approche</h2>
+<p class="text-slate-400">De la problématique à l'impact social.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Card 1: Challenge -->
+<div class="glass-card p-8 rounded-2xl flex flex-col gap-6 hover:translate-y-[-5px] transition-transform duration-300 group">
+<div class="h-14 w-14 rounded-full bg-white/5 flex items-center justify-center text-slate-300 group-hover:bg-primary group-hover:text-background-dark transition-colors duration-300">
+<span class="material-symbols-outlined text-3xl">sentiment_dissatisfied</span>
+</div>
+<div>
+<h3 class="text-xl font-bold text-white mb-2">Le Défi</h3>
+<p class="text-slate-400 text-sm leading-relaxed">
+                                    Des millions de jeunes font face au silence et à la stigmatisation entourant la santé mentale, sans espace sûr pour s'exprimer librement.
+                                </p>
+</div>
+</div>
+<!-- Card 2: Solution -->
+<div class="glass-card p-8 rounded-2xl flex flex-col gap-6 hover:translate-y-[-5px] transition-transform duration-300 group relative overflow-hidden">
+<div class="absolute top-0 right-0 w-20 h-20 bg-primary/10 rounded-bl-full -mr-4 -mt-4"></div>
+<div class="h-14 w-14 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-background-dark transition-colors duration-300">
+<span class="material-symbols-outlined text-3xl">psychology</span>
+</div>
+<div>
+<h3 class="text-xl font-bold text-white mb-2">La Solution</h3>
+<p class="text-slate-400 text-sm leading-relaxed">
+                                    Un compagnon IA disponible 24/7 qui écoute, guide et soutient sans jugement, rendant l'aide psychologique accessible à tous.
+                                </p>
+</div>
+</div>
+<!-- Card 3: Impact -->
+<div class="glass-card p-8 rounded-2xl flex flex-col gap-6 hover:translate-y-[-5px] transition-transform duration-300 group">
+<div class="h-14 w-14 rounded-full bg-white/5 flex items-center justify-center text-slate-300 group-hover:bg-primary group-hover:text-background-dark transition-colors duration-300">
+<span class="material-symbols-outlined text-3xl">volunteer_activism</span>
+</div>
+<div>
+<h3 class="text-xl font-bold text-white mb-2">L'Impact</h3>
+<p class="text-slate-400 text-sm leading-relaxed">
+                                    Briser les barrières et donner aux jeunes Africains les moyens de s'épanouir mentalement et émotionnellement pour un avenir meilleur.
+                                </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Stats Section -->
+<div class="w-full bg-surface-dark border-t border-white/5 mt-10">
+<div class="px-4 md:px-10 lg:px-20 xl:px-40 py-16">
+<div class="max-w-[1200px] mx-auto">
+<div class="flex flex-wrap gap-8 justify-around items-center">
+<div class="flex flex-col items-center gap-2 text-center p-4">
+<span class="material-symbols-outlined text-primary mb-2 text-3xl opacity-80">groups</span>
+<p class="text-4xl md:text-5xl font-black text-white tracking-tight">50k+</p>
+<p class="text-slate-400 font-medium">Vies Touchées</p>
+</div>
+<!-- Divider only on large screens -->
+<div class="hidden md:block w-px h-16 bg-gradient-to-b from-transparent via-white/10 to-transparent"></div>
+<div class="flex flex-col items-center gap-2 text-center p-4">
+<span class="material-symbols-outlined text-primary mb-2 text-3xl opacity-80">schedule</span>
+<p class="text-4xl md:text-5xl font-black text-white tracking-tight">24/7</p>
+<p class="text-slate-400 font-medium">Disponibilité</p>
+</div>
+<div class="hidden md:block w-px h-16 bg-gradient-to-b from-transparent via-white/10 to-transparent"></div>
+<div class="flex flex-col items-center gap-2 text-center p-4">
+<span class="material-symbols-outlined text-primary mb-2 text-3xl opacity-80">thumb_up</span>
+<p class="text-4xl md:text-5xl font-black text-white tracking-tight">98%</p>
+<p class="text-slate-400 font-medium">Satisfaction Utilisateur</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<div id="footer-placeholder"></div>
+<script src="js/main.js"></script>
+</body></html>
