@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MonColibri - Fonctionnement</title>
+<link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#36e27b",
+                        "background-light": "#f6f8f7",
+                        "background-dark": "#112117",
+                    },
+                    fontFamily: {
+                        "display": ["Spline Sans", "sans-serif"],
+                        "body": ["Noto Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .step-connector::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 100%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, #366348 0%, #36e27b 50%, #366348 100%);
+            transform: translateY(-50%);
+            z-index: 0;
+            opacity: 0.3;
+        }
+        .last-step::after {
+            display: none;
+        }
+        /* Hide connector on mobile */
+        @media (max-width: 1024px) {
+            .step-connector::after {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body class="font-display antialiased">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root overflow-x-hidden">
+<div id="header-placeholder"></div>
+<!-- Hero Section -->
+<div class="layout-container flex grow flex-col">
+<div class="px-4 lg:px-40 flex flex-1 justify-center py-12 lg:py-20">
+<div class="layout-content-container flex flex-col max-w-[1200px] flex-1">
+<!-- Section Header -->
+<div class="flex flex-col gap-6 text-center mb-16 lg:mb-24 px-4">
+<span class="text-primary font-bold tracking-wider uppercase text-sm">Parcours Utilisateur</span>
+<h1 class="text-white tracking-tight text-3xl font-bold leading-tight md:text-5xl md:font-black md:leading-tight max-w-[800px] mx-auto">
+                        Un chemin simple vers le mieux-être
+                    </h1>
+<p class="text-[#95c6a9] text-lg font-normal leading-relaxed max-w-[640px] mx-auto">
+                        MonColibri vous accompagne avec bienveillance à chaque étape, de la compréhension de vos émotions jusqu'à l'accès aux meilleures solutions.
+                    </p>
+</div>
+<!-- Steps Grid / Timeline -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-4 relative px-4">
+<!-- Step 1 -->
+<div class="flex flex-col items-center text-center relative z-10 step-connector group">
+<div class="w-20 h-20 rounded-full bg-[#1b3224] border border-[#366348] flex items-center justify-center mb-6 shadow-[0_0_15px_rgba(54,226,123,0.1)] group-hover:shadow-[0_0_25px_rgba(54,226,123,0.3)] group-hover:border-primary transition-all duration-300">
+<span class="material-symbols-outlined text-primary text-4xl">assignment</span>
+</div>
+<h3 class="text-white text-lg font-bold mb-2">1. Test Intelligent</h3>
+<p class="text-[#95c6a9] text-sm leading-relaxed px-2">Un questionnaire interactif rapide pour cibler votre état émotionnel actuel.</p>
+</div>
+<!-- Step 2 -->
+<div class="flex flex-col items-center text-center relative z-10 step-connector group">
+<div class="w-20 h-20 rounded-full bg-[#1b3224] border border-[#366348] flex items-center justify-center mb-6 shadow-[0_0_15px_rgba(54,226,123,0.1)] group-hover:shadow-[0_0_25px_rgba(54,226,123,0.3)] group-hover:border-primary transition-all duration-300">
+<span class="material-symbols-outlined text-primary text-4xl">smart_toy</span>
+</div>
+<h3 class="text-white text-lg font-bold mb-2">2. Audrey IA</h3>
+<p class="text-[#95c6a9] text-sm leading-relaxed px-2">Une analyse immédiate et une écoute active par notre intelligence artificielle.</p>
+</div>
+<!-- Step 3 -->
+<div class="flex flex-col items-center text-center relative z-10 step-connector group">
+<div class="w-20 h-20 rounded-full bg-[#1b3224] border border-[#366348] flex items-center justify-center mb-6 shadow-[0_0_15px_rgba(54,226,123,0.1)] group-hover:shadow-[0_0_25px_rgba(54,226,123,0.3)] group-hover:border-primary transition-all duration-300">
+<span class="material-symbols-outlined text-primary text-4xl">library_books</span>
+</div>
+<h3 class="text-white text-lg font-bold mb-2">3. Ressources</h3>
+<p class="text-[#95c6a9] text-sm leading-relaxed px-2">Accès à une bibliothèque d'outils de bien-être et de contenus éducatifs.</p>
+</div>
+<!-- Step 4 -->
+<div class="flex flex-col items-center text-center relative z-10 step-connector group">
+<div class="w-20 h-20 rounded-full bg-[#1b3224] border border-[#366348] flex items-center justify-center mb-6 shadow-[0_0_15px_rgba(54,226,123,0.1)] group-hover:shadow-[0_0_25px_rgba(54,226,123,0.3)] group-hover:border-primary transition-all duration-300">
+<span class="material-symbols-outlined text-primary text-4xl">medical_services</span>
+</div>
+<h3 class="text-white text-lg font-bold mb-2">4. Orientation</h3>
+<p class="text-[#95c6a9] text-sm leading-relaxed px-2">Mise en relation directe avec un psychologue expert si la situation l'exige.</p>
+</div>
+<!-- Step 5 -->
+<div class="flex flex-col items-center text-center relative z-10 last-step group">
+<div class="w-20 h-20 rounded-full bg-[#1b3224] border border-[#366348] flex items-center justify-center mb-6 shadow-[0_0_15px_rgba(54,226,123,0.1)] group-hover:shadow-[0_0_25px_rgba(54,226,123,0.3)] group-hover:border-primary transition-all duration-300">
+<span class="material-symbols-outlined text-primary text-4xl">trending_up</span>
+</div>
+<h3 class="text-white text-lg font-bold mb-2">5. Suivi</h3>
+<p class="text-[#95c6a9] text-sm leading-relaxed px-2">Un accompagnement évolutif pour garantir votre progression dans le temps.</p>
+</div>
+</div>
+<!-- CTA Section -->
+<div class="flex flex-col items-center mt-20 lg:mt-32">
+<div class="bg-[#1b3224] border border-[#366348] rounded-2xl p-8 lg:p-12 w-full max-w-4xl text-center relative overflow-hidden">
+<!-- Abstract Background Decoration -->
+<div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-primary via-transparent to-transparent"></div>
+<h3 class="text-white text-2xl lg:text-3xl font-bold mb-6 relative z-10">Prêt à commencer votre voyage ?</h3>
+<p class="text-[#95c6a9] text-base mb-8 max-w-2xl mx-auto relative z-10">
+                            Rejoignez des milliers de jeunes à travers l'Afrique qui utilisent MonColibri pour prendre soin de leur santé mentale. C'est gratuit et confidentiel.
+                        </p>
+<div class="flex justify-center relative z-10">
+<button class="flex min-w-[200px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-14 px-8 bg-primary hover:bg-[#2dc468] transition-colors text-[#122118] text-lg font-bold leading-normal tracking-[0.015em] shadow-lg shadow-primary/20">
+<span class="truncate mr-2">Commencer le test</span>
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="footer-placeholder"></div>
+</div>
+<script src="js/main.js"></script>
+</body></html>

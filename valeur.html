@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MonColibri - Valeur Ajoutée</title>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#36e27b",
+                        "background-light": "#f6f8f7",
+                        "background-dark": "#112117",
+                        "card-dark": "#162a1f",
+                    },
+                    fontFamily: {
+                        "display": ["Spline Sans", "Noto Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem",
+                        "lg": "1.5rem",
+                        "xl": "2rem",
+                        "2xl": "2.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<!-- Google Fonts & Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display min-h-screen flex flex-col items-center justify-center p-4 antialiased selection:bg-primary selection:text-background-dark">
+<div id="header-placeholder"></div>
+<main class="w-full max-w-7xl mx-auto py-12 lg:py-20 flex flex-col gap-12">
+<!-- Header Section -->
+<div class="text-center space-y-4 px-4 max-w-3xl mx-auto">
+<h2 class="text-slate-900 dark:text-white text-3xl md:text-5xl font-bold leading-tight tracking-tight">
+                Pourquoi MonColibri est unique ?
+            </h2>
+<p class="text-slate-600 dark:text-[#95c6a9] text-lg md:text-xl font-normal leading-relaxed">
+                Une technologie de pointe au service du bien-être de la jeunesse africaine.
+            </p>
+</div>
+<!-- Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4">
+<!-- Card 1: AI Specialization (Large) -->
+<div class="group relative overflow-hidden rounded-2xl md:col-span-2 min-h-[320px] lg:min-h-[400px] flex flex-col justify-end p-8 bg-card-dark border border-white/5 hover:border-primary/30 transition-all duration-300">
+<!-- Background Image with Overlay -->
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Abstract neural network nodes glowing green on dark background" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCBDpMHyI688nm-t-fSUNDfcmexYOCF0mcq5tvyxjztU_Z346goeEOMaKAV0Mh-e9OJ_lUXA6eKhkXaDPn-fu_hRXodJuWPrHT_yM4Fu5JtJVDyNcB6q_jiE9cJ3kFz8oWTWeUmRXhXvIFzgVMtoMopmF4QzP9ljEYcfGZ7g_zjYMH8N4Vaalo0taxR-xpnoVaCr0d-u6TdCO8Pot7xLQGQebHgUbPzJu_x2GIoYKi9zn9W964pb053vVI8876qp7rpayMR3GMClKgy");'>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/80 to-transparent"></div>
+<!-- Content -->
+<div class="relative z-10 max-w-xl">
+<div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center mb-4 backdrop-blur-sm text-primary">
+<span class="material-symbols-outlined text-3xl">psychology_alt</span>
+</div>
+<h3 class="text-white text-2xl md:text-3xl font-bold mb-3">IA spécialisée pour l'Afrique</h3>
+<p class="text-slate-200 text-base md:text-lg leading-relaxed opacity-90">
+                        Notre intelligence artificielle est spécifiquement entraînée sur les réalités et les contextes culturels africains pour une compréhension profonde et empathique, dépassant les barrières linguistiques.
+                    </p>
+</div>
+</div>
+<!-- Card 2: Free Access (Vertical Highlight) -->
+<div class="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#1a3826] to-card-dark p-8 flex flex-col border border-white/5 hover:border-primary/30 transition-all duration-300">
+<div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-9xl text-primary">savings</span>
+</div>
+<div class="relative z-10 flex flex-col h-full">
+<div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center mb-6 shadow-[0_0_15px_rgba(54,226,123,0.4)] text-background-dark">
+<span class="material-symbols-outlined text-2xl">volunteer_activism</span>
+</div>
+<h3 class="text-white text-xl font-bold mb-2">Accompagnement gratuit</h3>
+<p class="text-[#95c6a9] text-base mb-6 flex-grow">
+                        L'accès à la santé mentale ne doit pas être un luxe. 100% gratuit pour les utilisateurs finaux grâce à nos partenaires.
+                    </p>
+<div class="inline-flex items-center gap-2 text-primary text-sm font-semibold">
+<span>En savoir plus</span>
+<span class="material-symbols-outlined text-sm transition-transform group-hover:translate-x-1">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- Card 3: Qualified Psychologists -->
+<div class="group relative rounded-2xl bg-card-dark p-8 border border-white/5 hover:border-primary/30 transition-all duration-300 hover:bg-white/5">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4 text-primary group-hover:bg-primary group-hover:text-background-dark transition-colors">
+<span class="material-symbols-outlined text-2xl">medical_services</span>
+</div>
+<h3 class="text-white text-xl font-bold mb-2">Psychologues qualifiés</h3>
+<p class="text-[#95c6a9] text-sm leading-relaxed">
+                    Une supervision constante par des psychologues certifiés pour assurer la qualité et la sécurité des échanges lorsque l'IA atteint ses limites.
+                </p>
+</div>
+<!-- Card 4: Security -->
+<div class="group relative rounded-2xl bg-card-dark p-8 border border-white/5 hover:border-primary/30 transition-all duration-300 hover:bg-white/5">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4 text-primary group-hover:bg-primary group-hover:text-background-dark transition-colors">
+<span class="material-symbols-outlined text-2xl">verified_user</span>
+</div>
+<h3 class="text-white text-xl font-bold mb-2">Sécurité &amp; Confidentialité</h3>
+<p class="text-[#95c6a9] text-sm leading-relaxed">
+                    Vos données sont sacrées. Échanges chiffrés de bout en bout, anonymat garanti et conformité aux standards internationaux.
+                </p>
+</div>
+<!-- Card 5: Accessibility -->
+<div class="group relative rounded-2xl bg-card-dark p-8 border border-white/5 hover:border-primary/30 transition-all duration-300 hover:bg-white/5">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4 text-primary group-hover:bg-primary group-hover:text-background-dark transition-colors">
+<span class="material-symbols-outlined text-2xl">phonelink_ring</span>
+</div>
+<h3 class="text-white text-xl font-bold mb-2">Accessibilité Totale</h3>
+<p class="text-[#95c6a9] text-sm leading-relaxed">
+                    Disponible là où vous êtes : WhatsApp, SMS et Web. Optimisé pour fonctionner même en zone à bas débit internet.
+                </p>
+</div>
+<!-- Card 6: Social Impact (Full Width Bottom) -->
+<div class="group relative overflow-hidden rounded-2xl md:col-span-2 lg:col-span-3 bg-card-dark border border-white/5 hover:border-primary/30 transition-all duration-300">
+<!-- Decorative Map Background -->
+<div class="absolute inset-0 opacity-20 bg-no-repeat bg-right-bottom bg-contain" data-alt="Abstract simplified map illustration of Africa continent" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDp1nU1EW4yc2Z_zIWtaMcxfjjFRcwCaJqWh84TR7pYx5ejk_-MwU8f5mTljpC6mznTjmbkMHl3HMncNTnkE_p1KkwK5ypsh-iRgkhjnvgzUiRhxaumH0s2Ts47HayN0EHIkCI8M8JALXb6_rWwVmaKAcBuBVm2WGk_bypsp_ICL-CR4_zlh-Ads3E97dhTxkGxys6RuP2-ijPCZxEWUCY-39xLu35rCM2DnjIcIZAu-YyyFiek-xUhjwvfzoucjmCN3eiBmT8QoYOk");'>
+</div>
+<div class="absolute inset-0 bg-gradient-to-r from-background-dark via-card-dark to-transparent"></div>
+<div class="relative z-10 p-8 md:p-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+<div class="max-w-2xl">
+<div class="flex items-center gap-3 mb-3">
+<span class="material-symbols-outlined text-primary text-3xl">public</span>
+<h3 class="text-white text-2xl md:text-3xl font-bold">Impact social massif</h3>
+</div>
+<p class="text-[#95c6a9] text-base md:text-lg">
+                            Notre mission dépasse la technologie. Nous construisons le plus grand réseau de soutien psychologique d'Afrique.
+                        </p>
+</div>
+<div class="flex flex-col items-start md:items-end">
+<span class="text-5xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary to-white">10M+</span>
+<span class="text-white font-medium mt-1">Jeunes à aider d'ici 2030</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Call to Action (Optional footer for section) -->
+<div class="flex justify-center mt-4">
+<button class="bg-primary hover:bg-[#2dc76b] text-background-dark font-bold py-4 px-8 rounded-full transition-colors duration-300 flex items-center gap-2 group">
+                Rejoindre le mouvement
+                <span class="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_forward</span>
+</button>
+</div>
+</main>
+<div id="footer-placeholder"></div>
+<script src="js/main.js"></script>
+</body></html>

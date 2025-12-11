@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MonColibri - Audrey IA</title>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Theme Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#36e27b",
+                        "background-light": "#f6f8f7",
+                        "background-dark": "#112117",
+                        "surface-dark": "#1a2e23",
+                        "surface-light": "#ffffff",
+                    },
+                    fontFamily: {
+                        "display": ["Spline Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        /* Custom subtle animations for the 'breathing' AI effect */
+        @keyframes pulse-soft {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.8; transform: scale(1.05); }
+        }
+        .animate-pulse-soft {
+            animation: pulse-soft 4s ease-in-out infinite;
+        }
+
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(54, 226, 123, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display antialiased overflow-x-hidden transition-colors duration-300">
+<!-- Main Container -->
+<div class="relative flex min-h-screen w-full flex-col">
+<div id="header-placeholder"></div>
+<!-- Hero Section: Audrey Introduction -->
+<section class="relative pt-32 pb-16 px-4 md:px-10 lg:px-20 flex flex-col items-center justify-center min-h-[90vh]">
+<!-- Decorative Glow Background -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/20 rounded-full blur-[120px] pointer-events-none z-0"></div>
+<div class="z-10 w-full max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<!-- Text Content -->
+<div class="flex flex-col gap-6 order-2 lg:order-1 text-center lg:text-left">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 w-fit mx-auto lg:mx-0">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</span>
+<span class="text-xs font-medium text-primary uppercase tracking-wider">IA Active 24/7</span>
+</div>
+<h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white leading-tight tracking-tight">
+                        Rencontrez <span class="text-primary">Audrey</span><br/>
+                        Votre Compagnonne IA Personnelle
+                    </h1>
+<p class="text-lg text-gray-600 dark:text-gray-300 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+                        Toujours à l'écoute, toujours sécurisée. Une intelligence émotionnelle avancée conçue spécifiquement pour la jeunesse africaine. Audrey n'est pas un simple algorithme, c'est une présence bienveillante.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
+<button class="flex items-center justify-center gap-2 bg-primary text-background-dark hover:bg-white hover:text-black transition-all duration-300 rounded-full px-8 py-4 font-bold text-lg shadow-[0_0_20px_rgba(54,226,123,0.3)] hover:shadow-[0_0_30px_rgba(54,226,123,0.5)]">
+<span class="material-symbols-outlined">chat_bubble</span>
+                            Parler à Audrey
+                        </button>
+<button class="flex items-center justify-center gap-2 bg-transparent border border-gray-300 dark:border-gray-700 text-gray-900 dark:text-white hover:bg-white/5 transition-all duration-300 rounded-full px-8 py-4 font-medium text-lg">
+<span class="material-symbols-outlined">play_circle</span>
+                            Voir la démo
+                        </button>
+</div>
+</div>
+<!-- Visual Focus: Abstract Avatar + Chat UI -->
+<div class="relative order-1 lg:order-2 flex justify-center items-center h-[500px]">
+<!-- Abstract Orb (Pure CSS Representation of AI) -->
+<div class="absolute w-64 h-64 md:w-80 md:h-80 bg-gradient-to-tr from-[#1a2e23] to-[#36e27b] rounded-full blur-xl opacity-60 animate-pulse-soft mix-blend-screen"></div>
+<div class="relative w-72 h-72 md:w-96 md:h-96 rounded-full border border-primary/30 flex items-center justify-center bg-black/20 backdrop-blur-sm overflow-hidden shadow-2xl shadow-primary/20">
+<!-- Inner Image (Abstract Representation) -->
+<div class="w-full h-full bg-cover bg-center opacity-80 mix-blend-overlay" data-alt="Abstract glowing green neural network waves representing artificial intelligence" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD1wVDghJnY2TJL5OvmrtzbZhq1njLZDp7t0kLEC6YdnBfnGRpnP_TTltHX1wkJLZwIN7iVU84WYHOTjsZUGM_ZQPBQ3M9c6vNmccrfIyP9ZSVE27KYivUMX-kF7x5R4c95USwHQvQoAyL9Y1jmIUTnW4TcuUMBk_FqUHjTGtii4wjTVVN91OxLZyEhwDFlNWWJHT8IpZn14iEJYavpRo75qssJtJJMlFanssg3CBqoFBcJNbpNI6KHj6LsL7tJ57F-PV7gh3suE0G6");'></div>
+<div class="absolute inset-0 bg-gradient-to-b from-transparent to-background-dark/80"></div>
+<!-- Floating Chat Bubble Simulation -->
+<div class="absolute bottom-12 left-1/2 -translate-x-1/2 w-[90%] glass-panel rounded-2xl p-4 shadow-lg animate-[float_6s_ease-in-out_infinite]">
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center shrink-0 border border-primary/40">
+<span class="material-symbols-outlined text-primary text-sm">smart_toy</span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="text-primary text-xs font-bold uppercase tracking-wide">Audrey</span>
+<p class="text-white text-sm leading-snug">
+                                        Bonjour, comment te sens-tu aujourd'hui ? Je suis là pour t'écouter sans jugement.
+                                    </p>
+</div>
+</div>
+<!-- Typing indicator -->
+<div class="flex gap-1 mt-3 ml-11">
+<span class="w-1.5 h-1.5 bg-primary/60 rounded-full animate-bounce"></span>
+<span class="w-1.5 h-1.5 bg-primary/60 rounded-full animate-bounce [animation-delay:0.2s]"></span>
+<span class="w-1.5 h-1.5 bg-primary/60 rounded-full animate-bounce [animation-delay:0.4s]"></span>
+</div>
+</div>
+</div>
+<!-- Floating Badge 1 -->
+<div class="absolute top-10 right-10 md:right-0 bg-surface-dark/90 dark:bg-surface-dark/80 backdrop-blur border border-white/10 p-3 rounded-xl shadow-xl flex items-center gap-3 animate-[float_7s_ease-in-out_infinite_reverse]">
+<div class="bg-primary/20 p-2 rounded-lg text-primary">
+<span class="material-symbols-outlined text-xl">psychology</span>
+</div>
+<div>
+<p class="text-xs text-gray-400">Analyse</p>
+<p class="text-sm font-bold text-white">Temps Réel</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Features Grid: Capabilities -->
+<section class="py-20 bg-white dark:bg-[#0c1610] relative">
+<div class="layout-container max-w-7xl mx-auto px-4 md:px-10 lg:px-20">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">Ce que <span class="text-primary">Audrey</span> peut faire pour vous</h2>
+<p class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+                        Une technologie de pointe conçue pour comprendre les nuances humaines et offrir un espace sûr pour grandir.
+                    </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Feature 1: Emotional Support -->
+<div class="group bg-background-light dark:bg-surface-dark rounded-2xl p-8 hover:bg-white dark:hover:bg-[#1f362a] transition-all duration-300 border border-transparent hover:border-primary/20 shadow-sm hover:shadow-xl">
+<div class="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-primary text-3xl">volunteer_activism</span>
+</div>
+<h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Soutien Émotionnel</h3>
+<p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                            Une écoute empathique disponible 24h/24 et 7j/7. Audrey détecte votre humeur et adapte ses réponses pour vous apaiser.
+                        </p>
+</div>
+<!-- Feature 2: Smart Conversation -->
+<div class="group bg-background-light dark:bg-surface-dark rounded-2xl p-8 hover:bg-white dark:hover:bg-[#1f362a] transition-all duration-300 border border-transparent hover:border-primary/20 shadow-sm hover:shadow-xl">
+<div class="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-primary text-3xl">forum</span>
+</div>
+<h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Conversation Intelligente</h3>
+<p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                            Traitement du langage naturel adapté aux contextes culturels et aux dialectes locaux africains pour une compréhension profonde.
+                        </p>
+</div>
+<!-- Feature 3: Data Security -->
+<div class="group bg-background-light dark:bg-surface-dark rounded-2xl p-8 hover:bg-white dark:hover:bg-[#1f362a] transition-all duration-300 border border-transparent hover:border-primary/20 shadow-sm hover:shadow-xl">
+<div class="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-primary text-3xl">lock</span>
+</div>
+<h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Sécurité des Données</h3>
+<p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                            Vos échanges sont 100% anonymes et cryptés de bout en bout. Votre vie privée est notre priorité absolue.
+                        </p>
+</div>
+<!-- Feature 4: Analysis -->
+<div class="group bg-background-light dark:bg-surface-dark rounded-2xl p-8 hover:bg-white dark:hover:bg-[#1f362a] transition-all duration-300 border border-transparent hover:border-primary/20 shadow-sm hover:shadow-xl">
+<div class="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-primary text-3xl">query_stats</span>
+</div>
+<h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Analyse Comportementale</h3>
+<p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                            Compréhension fine des nuances émotionnelles et suivi de votre évolution pour des réponses toujours plus pertinentes.
+                        </p>
+</div>
+<!-- Feature 5: Orientation -->
+<div class="group bg-background-light dark:bg-surface-dark rounded-2xl p-8 hover:bg-white dark:hover:bg-[#1f362a] transition-all duration-300 border border-transparent hover:border-primary/20 shadow-sm hover:shadow-xl md:col-span-2 lg:col-span-2 relative overflow-hidden">
+<!-- Background decoration -->
+<div class="absolute right-0 top-0 w-32 h-full bg-gradient-to-l from-primary/5 to-transparent pointer-events-none"></div>
+<div class="flex flex-col md:flex-row gap-6 items-start md:items-center h-full">
+<div class="w-14 h-14 shrink-0 rounded-full bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-primary text-3xl">explore</span>
+</div>
+<div class="flex-1">
+<h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Orientation Professionnelle</h3>
+<p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed max-w-lg">
+                                    Audrey n'est pas qu'une oreille, c'est un guide. Lorsque la situation l'exige, elle vous oriente intelligemment vers une aide humaine qualifiée et des professionnels de santé disponibles dans votre région.
+                                </p>
+</div>
+<div class="hidden md:block">
+<span class="material-symbols-outlined text-6xl text-primary/10 group-hover:text-primary/20 transition-colors">medical_services</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-16 px-4 bg-background-light dark:bg-background-dark border-t border-gray-200 dark:border-white/5">
+<div class="max-w-4xl mx-auto bg-surface-dark rounded-3xl p-8 md:p-12 text-center relative overflow-hidden">
+<!-- Background pattern -->
+<div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5"></div>
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-[80px]"></div>
+<div class="relative z-10 flex flex-col items-center gap-6">
+<h2 class="text-2xl md:text-3xl font-bold text-white">Prêt à discuter avec Audrey ?</h2>
+<p class="text-gray-300 max-w-lg">
+                        Découvrez une nouvelle façon d'interagir avec la technologie pour votre bien-être mental.
+                    </p>
+<button class="bg-white text-background-dark hover:bg-primary transition-colors duration-300 font-bold rounded-full px-8 py-3 text-base flex items-center gap-2">
+                        Commencer maintenant
+                        <span class="material-symbols-outlined text-lg">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+<div id="footer-placeholder"></div>
+</div>
+<script src="js/main.js"></script>
+</body></html>
