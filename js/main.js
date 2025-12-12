@@ -1,14 +1,3 @@
-
-function loadComponent(url, placeholderId) {
-    fetch(url)
-        .then(response => response.text())
-        .then(data => {
-            if (document.getElementById(placeholderId)) {
-                document.getElementById(placeholderId).innerHTML = data;
-            }
-        });
-}
-
 function setupPopup() {
     const popup = document.createElement('div');
     popup.id = 'popup';
@@ -53,7 +42,5 @@ function setupPopup() {
 
 
 document.addEventListener("DOMContentLoaded", function() {
-    loadComponent('header.html', 'header-placeholder');
-    loadComponent('footer.html', 'footer-placeholder');
     setupPopup();
 });
